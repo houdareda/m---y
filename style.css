@@ -1,0 +1,302 @@
+/* Google Font : Oswald */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+.contanier{
+    width: 85%;
+    margin: auto;
+}
+.btn{
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    background: linear-gradient(90deg, #c467f5, #53f3ff);
+    position: relative;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+#watsapp{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: #11f124;
+}
+#watsapp img{
+    width: 70px;
+    border-radius: 50%;
+}
+/* header */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+header nav .logo{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+}
+header nav .nav-links a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-left: 50px;
+}
+header nav .nav-links{
+    display: flex;
+    align-items: center;
+}
+header nav .nav-links .btn{
+    padding: 12px 40px;
+    font-size: 18px;
+}
+.hero{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    top: -300%;
+    right: -200%;
+    width: 500%;
+    height: 500%;
+    background: linear-gradient(#1a1a1a86 , #1a1a1a1e ),url(./Untitled-11.jpg);
+    z-index: 0;
+    transform: rotate(30deg);
+    z-index: -30;
+    /* clip-path: polygon(40% 0, 100% 0, 100% 100%, 50% 100%); */
+}
+
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg , #1a1a1ace ,  #1a1a1af1, #1a1a1a,#1a1a1a, #1a1a1a , #1a1a1a, #1a1a1af1, #1a1a1ace );
+    background-position: center;
+    z-index: -20;
+}
+/* .hero span{
+    position: absolute;
+    bottom: -170px;
+    left: -405px;
+    width: 100%;
+    height: 250%;
+    background: linear-gradient(#1a1a1a86 , #1a1a1a1e ),url(./Untitled-11.jpg);
+    background-size: contain;
+    background-position: right;
+    z-index: -100;
+    transform: rotate(30deg);
+} */
+.hero .contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.hero .contanier h1{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.hero .contanier h1:nth-child(1){
+    font-size: 70px;
+}
+.hero .contanier p{
+    color: #999;
+    width: 50%;
+    line-height: 2;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+/* start demo */ 
+.sec-head{
+    text-align: center;
+    padding: 80px 0;
+}
+.sec-head h1{
+    font-size: 60px;
+    background: linear-gradient(90deg, #a600ff, #40e7f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+.sec-head p{
+    color: #333;
+    width: 50%;
+    margin: auto;
+}
+.sec-head ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sec-head ul li{
+    font-size: 18px;
+    color: #1a1a1a;
+    margin: 0 12px;
+    list-style: none;
+}
+.sec-head ul i{
+    margin: auto 12px;
+    list-style: none;
+    font-size: 13px;
+    background: linear-gradient(90deg, #a600ff, #40e7f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.demo .content .boxs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 50px;
+}
+.demo .content .boxs .box{
+    width: 30%;
+    height: 300px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.demo .content .boxs .box .imgg{
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #a600ff;
+    overflow: hidden;
+}
+.demo .content .boxs .box img{
+    width: 100%;
+    height: auto;
+    transition: 6s linear; 
+}
+.demo .content .boxs .box:hover img {
+    transform: translateY(calc(-100% + 300px));
+}
+.demo .spc-project:hover img{
+    transform: translateY(calc(-100% + 500px));
+}
+.demo .spc-project{
+    width: 60%;
+    margin: auto;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    border: 2px solid #a600ff;
+    border-radius: 5px;
+    position: relative;
+}
+.demo .spc-project::before{
+    content: 'Full E-commerce Website';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    background: linear-gradient(90deg, #c467f5, #53f3ff);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.demo .spc-project img{
+    width: 100%;
+    height: auto;
+    transition: 7s linear;
+}
+.demo .content .boxs .box h6{
+    font-size: 18px;
+    color: #1a1a1a;
+    padding: 30px 0;
+}
+
+
+
+
+
+
+
+.features {
+    background: linear-gradient(90deg, #c467f520, #53f4ff20);
+}
+.features .items{
+    display: flex;
+    justify-content:center;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 0 0 50px;
+    gap: 50px;
+}
+.features .items .item{
+    width: 15%;
+    height: 150px;
+    text-align: center;
+    box-shadow: 3px 3px 8px #8b8b8b50;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+}
+.features .items .item:hover{
+    top: -15px;
+}
+.features .items .item img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.features .items .item h6{
+    font-size: 14px;
+    color: #1a1a1a;
+    text-transform: capitalize;
+}
+.features .items .item img.big{
+    width: 50px;
+    margin-bottom: 36px;
+    margin-top: 20px;
+}
+.footer{
+    background-color: #1a1a1a;
+}
+.footer .contanier{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+    width: 40px;
+    margin-left: 20px;
+}
+.footer h5{
+    color: #999;
+}
